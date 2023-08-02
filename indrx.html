@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio websitr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo">
+              
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                   
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text"> 
+                
+                <p>
+                <br>
+                <br>
+                </p>
+                <br>
+
+                <h1>Hi,I'm <br>
+                    <span>Kartikey</span> Yamagar</h1>
+                    <p>-Civil Engineer</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                      <img src="kp.png">
+                </div>
+                <div class="about-col-2">
+                <h1 class="sub-title">About <span>Me</span></h1>
+                 <p class="p-2" text="text-centre">
+                    I had completed my graduation in CIVIL ENGINEERING,from Sanjay Ghodawat Institute under Shivaji University,Kolhapur.
+                    After that I had started to work as SITE ENGINEER which is very crucial period for me.As a civil engineer, I specialize in designing, constructing, and maintaining essential infrastructure projects. With expertise in areas such as structural analysis, transportation systems, and environmental sustainability, I am dedicated to creating safe, efficient, and sustainable solutions for society's needs. Whether it's bridges, buildings, roads, or water supply systems, I strive to apply my technical skills and knowledge to improve the built environment and contribute to the betterment of communities.
+                </p>
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')"><span>S</span>kills</p>
+                    <p class="tab-links" onclick="opentab('Education')"><span>E</span>ducation</p>
+                    
+                 </div>
+                 <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Skill 1</span><br>Project Scope Management</li>
+                        <li><span>Skill 2</span><br>Create WBS</li>
+                        <li><span>Skill 3</span><br>Identify Project Activities</li>
+                        <li><span>Skill 4</span><br>Can Create Network Digrams</li>
+                        <li><span>Skill 5</span><br>Resource Scheduling</li>
+                        <li><span>Skill 6</span><br>Estimate activity project cost</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>BE Civil</span><br>Sanjay Ghodawat Institute,Kolhapur<br>First class with distinction(2019)</li>
+                        <li><span>HSC</span><br>GDK Sainik School</li>
+                        <li><span>Project Management course</span><br>Constro Skill Training Institute,Pune</li>
+                        
+                    </ul>
+                 </div>
+                 
+                 </div>
+                </div>
+            </div>
+         </div>
+
+    </div>
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+ </script>
+</body>
+</html>
